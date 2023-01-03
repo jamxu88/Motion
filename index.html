@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Engine Demo</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/481276869866684429/1025935848467861625/unknown.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                fontSize: {
+                    'xs': '0.75rem',
+                    '2xl': '1.5rem',
+                    '3xl': '1.875rem',
+                    '4xl': '2.25rem',
+                }
+            }
+        }
+      </script>
+      <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f100;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(131, 131, 131, 0.158);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(131, 131, 131, 0.158);
+        }
+      </style>
+</head>
+<body class="bg-[#202020]">
+    <toolbar></toolbar>
+    <outline></outline>
+    <div id="content" class="flex bg-[#202020] pt-8 h-full">
+        <div id="margin" class="h-screen w-1/6"></div>
+        <div class="w-5/6">
+            <input class="text-[#FFFFFF] font-bold text-4xl w-full outline-none bg-[#202020] h-8 px-8 pb-8 pt-12 placeholder:text-[#999999]" id="pagetitle" contenteditable="true" placeholder="Untitled Page">
+            <div id="editor" class="h-full outline-none px-8 pb-8 text-[#eeeeee] scroll-smooth overflow-scroll" contenteditable="true">
+                <div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

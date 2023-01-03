@@ -1,0 +1,24 @@
+{
+    "components": [
+        {
+            "name": "outline",
+            "path": "./components/outline.html"
+        },
+        {
+            "name": "toolbar",
+            "path": "./components/toolbar.html"
+        },
+        {
+            "name": "pages",
+            "path": "./components/pages.html"
+        }
+    ],
+    "scripts": [
+        {
+            "path": "./engine/engine.js"
+        },
+        {
+            "path": "./scripts/script.js"
+        }
+    ]
+}
